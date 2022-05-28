@@ -16,12 +16,12 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_LPUART                    LPUART1
+#define DEMO_LPUART                    LPUART3
 #define DEMO_LPUART_CLK_FREQ           BOARD_DebugConsoleSrcFreq()
 #define LPUART_TX_DMA_CHANNEL          0U
 #define LPUART_RX_DMA_CHANNEL          1U
-#define LPUART_TX_DMA_REQUEST          kDmaRequestMuxLPUART1Tx
-#define LPUART_RX_DMA_REQUEST          kDmaRequestMuxLPUART1Rx
+#define LPUART_TX_DMA_REQUEST          kDmaRequestMuxLPUART3Tx
+#define LPUART_RX_DMA_REQUEST          kDmaRequestMuxLPUART3Rx
 #define EXAMPLE_LPUART_DMAMUX_BASEADDR DMAMUX
 #define EXAMPLE_LPUART_DMA_BASEADDR    DMA0
 #define ECHO_BUFFER_LENGTH 8

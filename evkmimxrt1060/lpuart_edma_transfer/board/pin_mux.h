@@ -37,15 +37,15 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
-/* GPIO_AD_B0_13 (coord L14), UART1_RXD */
+/* GPIO_AD_B1_07 (coord K10), CSI_HSYNC/J35[16]/J22[1]/UART_RX */
 /* Routed pin properties */
-#define BOARD_INITPINS_UART1_RXD_PERIPHERAL                              LPUART1   /*!< Peripheral name */
-#define BOARD_INITPINS_UART1_RXD_SIGNAL                                       RX   /*!< Signal name */
+#define BOARD_INITPINS_CSI_HSYNC_PERIPHERAL                              LPUART3   /*!< Peripheral name */
+#define BOARD_INITPINS_CSI_HSYNC_SIGNAL                                       RX   /*!< Signal name */
 
-/* GPIO_AD_B0_12 (coord K14), UART1_TXD */
+/* GPIO_AD_B1_06 (coord J12), CSI_VSYNC/J35[18]/J22[2]/UART_TX */
 /* Routed pin properties */
-#define BOARD_INITPINS_UART1_TXD_PERIPHERAL                              LPUART1   /*!< Peripheral name */
-#define BOARD_INITPINS_UART1_TXD_SIGNAL                                       TX   /*!< Signal name */
+#define BOARD_INITPINS_CSI_VSYNC_PERIPHERAL                              LPUART3   /*!< Peripheral name */
+#define BOARD_INITPINS_CSI_VSYNC_SIGNAL                                       TX   /*!< Signal name */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
