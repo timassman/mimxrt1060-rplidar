@@ -13,6 +13,7 @@
 #if defined(FSL_FEATURE_SOC_DMAMUX_COUNT) && FSL_FEATURE_SOC_DMAMUX_COUNT
 #include "fsl_dmamux.h"
 #endif
+#include "sw_delay.h"
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
@@ -75,6 +76,8 @@ void LPUART_UserCallback(LPUART_Type *base, lpuart_edma_handle_t *handle, status
  */
 int main(void)
 {
+	sw_delay(10000);
+
     lpuart_config_t lpuartConfig;
     edma_config_t config;
     lpuart_transfer_t xfer;
