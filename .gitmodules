@@ -1,0 +1,3 @@
+[submodule "evkmimxrt1060/lpuart_edma_transfer/rplidar_sdk"]
+	path = evkmimxrt1060/lpuart_edma_transfer/rplidar_sdk
+	url = https://github.com/timassman/rplidar_sdk.git
