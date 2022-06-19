@@ -39,7 +39,9 @@
 #include "clock_config.h"
 #include "MIMXRT1062.h"
 #include "fsl_debug_console.h"
+
 /* TODO: insert other include files here. */
+#include "rplidar_driver.h"
 
 /* TODO: insert other definitions and declarations here. */
 
@@ -57,6 +59,18 @@ int main(void) {
     /* Init FSL debug console. */
     BOARD_InitDebugConsole();
 #endif
+
+    RPLidarDriver lidar_driver = RPLidarDriver();
+
+    if (!lidar_driver.Init())
+    {
+    	PRINTF("Lidar driver init failed\n");
+    }
+
+    if (!lidar_driver.StartScan())
+    {
+    	PRINTF("Lidar driver startscan failed\n");
+    }
 
     PRINTF("Hello World\n");
 
