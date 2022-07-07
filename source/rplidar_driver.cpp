@@ -23,8 +23,18 @@ bool RPLidarDriver::Init()
 	   return false;
 	}
 
-    sl_lidar_response_device_info_t devinfo;
+	const std::string device = "";
+	int baudrate = 0;
 
+	sl::IChannel* _channel = (*sl::createSerialPortChannel(device, baudrate));
+    op_result = m_drv->connect(_channel);
+
+	if (!SL_IS_OK(op_result)) {
+	   PRINTF("Unable to create serial port channel\n");
+	   return false;
+	}
+
+	sl_lidar_response_device_info_t devinfo;
     op_result = m_drv->getDeviceInfo(devinfo);
 
     if (!SL_IS_OK(op_result)) {

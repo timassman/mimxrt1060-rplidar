@@ -365,7 +365,7 @@
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="component"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="device"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
-						<entry excluding="arch/win32|arch/macOS|arch/linux|sl_udp_channel.cpp|sl_tcp_channel.cpp|sl_serial_channel.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rplidar_sdk/sdk/src"/>
+						<entry excluding="arch/win32|arch/macOS|arch/linux|sl_udp_channel.cpp|sl_tcp_channel.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rplidar_sdk/sdk/src"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="utilities"/>
